@@ -1,15 +1,29 @@
-.App {
-  text-align: center;
+body,
+html {
+  background-color: darkslategray;
+  color: #fff;
+  height: 100vh;
+  display: grid;
 }
 
-body {
-  background-color:darkslategray;
-  color: #fff;
-  margin-top:20%;
+.App {
+  text-align: center;
+  margin: auto;
 }
 
 button {
-  font-size: 20px;
-  width: 50%;
+  font-size: 26px;
+  padding: 10px;
+  width: 49%;
   float: left;
+  margin: 5px 0.5%;
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    padding: 10px;
+    width: 85%;
+    float: none;
+    margin: 10px auto;
+  }
 }
